@@ -15,6 +15,7 @@ function handleAIRequest(e) {
   const action = e.nativeEvent.submitter.value;
   if (action ==="analyze"){
     setImage(query);
+    setImageAnalysis("Your analysys results will appear here");
   }
 }
 
@@ -36,7 +37,7 @@ function handleAIRequest(e) {
       {imageAnalysys && (
         <>
         <h1>Your analysys results will appear here</h1>
-        <p>adsdasda</p>
+        <p>{imageAnalysys}</p>
         </>
       )}
   </div>
