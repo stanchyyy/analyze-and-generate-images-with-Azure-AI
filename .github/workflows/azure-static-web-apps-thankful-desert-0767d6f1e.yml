@@ -40,12 +40,12 @@ jobs:
     steps:
       - name: Close Pull Request
         id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          env:
+        env:
           REACT_APP_GENERATE_IMAGE_ENDPOINT: ${{ secrets.REACT_APP_GENERATE_IMAGE_ENDPOINT }}
           REACT_APP_GENERATE_IMAGE_KEY: ${{ secrets.REACT_APP_GENERATE_IMAGE_KEY }}
           REACT_APP_VISION_ENDPOINT: ${{ secrets.REACT_APP_VISION_ENDPOINT }}
           REACT_APP_VISION_KEY: ${{ secrets.REACT_APP_VISION_KEY }}
+        uses: Azure/static-web-apps-deploy@v1
+        with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_THANKFUL_DESERT_0767D6F1E }}
           action: "close"
