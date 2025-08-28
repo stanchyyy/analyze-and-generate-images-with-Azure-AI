@@ -1,6 +1,5 @@
 import React from 'react';
 import AzureClient from './AzureClient.js';
-import ImageAnalysisClient from '@azure-rest/ai-vision-image-analysis';
 import OpenAiGenerateImage from './OpenAiGenerateImage.js';
 
 
