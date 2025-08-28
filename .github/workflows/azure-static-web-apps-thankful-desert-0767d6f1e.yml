@@ -43,7 +43,7 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           env:
-          REACT_APP_GENERATE_IMAGE_ENDPOINT: ${{ secrets.RREACT_APP_GENERATE_IMAGE_ENDPOINT }}
+          REACT_APP_GENERATE_IMAGE_ENDPOINT: ${{ secrets.REACT_APP_GENERATE_IMAGE_ENDPOINT }}
           REACT_APP_GENERATE_IMAGE_KEY: ${{ secrets.REACT_APP_GENERATE_IMAGE_KEY }}
           REACT_APP_VISION_ENDPOINT: ${{ secrets.REACT_APP_VISION_ENDPOINT }}
           REACT_APP_VISION_KEY: ${{ secrets.REACT_APP_VISION_KEY }}
